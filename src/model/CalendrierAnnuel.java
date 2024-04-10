@@ -25,7 +25,7 @@ public class CalendrierAnnuel {
 			return !jours[jour];
 		}
 		void reserver(int jour) throws IllegalStateException{
-			if(!estLibre(jour))
+			if(estLibre(jour))
 				jours[jour] = true;
 			else
 				throw new IllegalStateException();
